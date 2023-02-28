@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --primary: #ebebeb;
+
+    --background: #ffffff5c;
+    --text: #242424;
+    --add: #084298;
+
+    --transition: 0.4s;
+}
+
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background: rgb(180, 100, 255);
+}
+
+
+/* Start Button Of Modal  */
+
+p#MoreInfoP {
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+p#MoreInfoP:hover {
+    color: var(--text);
+}
+
+/* Start Modal More About */
+
+  .Self_modal_about {
+    position: absolute;
+    background-color: #0000004e;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+  }
+  .Self_modal_about.show {
+    display: flex;
+  }
+  .Self_modal_about.show .card {
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  .Self_modal_about .card {
+    max-width: 400px;
+    min-height: 350px;
+    color: #454545;
+    transition: 0.5s;
+    transform: translateY(-30px);
+    visibility: hidden;
+  }
+
+  .Self_modal_about .card .card-body .owner .info-content {
+    flex: 1 0 65%;
+  }
+
+  .Self_modal_about .card .card-body .owner .info-content .social_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .Self_modal_about .card .card-body .owner .info-content .social_content a {
+    background-color: #454545;
+    color: #fff;
+    border-radius: 50%;
+    transition: 0.4s;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+  }
+  .Self_modal_about .card .card-body .owner .info-content .social_content a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .Self_modal_about .card .card-body .owner .img-content {
+    flex: 1 0 35%;
+    height: max-content;
+  }
+  .Self_modal_about .card .card-body .owner .img-content img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+/* End Modal More About */
+/* ---------------------------------------- */
+/* Start Parent (card_phone) */
+.card_phone {
+    height: max-content;
+    padding: 10px;
+    max-width: 500px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* output part */
+.card_phone .output_part {
+    padding: 5px;
+    background-color: rgb(5, 163, 5);
+    box-shadow: inset 0 0 9px var(--black-color);
+    border-radius: 8px;
+    min-width: 120px;
+    overflow-x: hidden;
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.card_phone .output_part .top {
+    font-size: 20px;
+    transition: var(--transition);
+}
+.card_phone .output_part .top.hide {
+    position: relative;
+    top: -10px;
+    font-size: 14px;
+    color: var(--text);
+}
+
+.card_phone .output_part .down {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    transition: var(--transition);
+    visibility: hidden;
+}
+.card_phone .output_part .down.show {
+    visibility: visible;
+}
+
+/* buttons part */
+.card_phone .btns_part {
+    display: grid;
+    background-color: #2196F3;
+    gap: 5px;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-areas: '. . . .'
+    '. . . .'
+    '. . . .'
+    '. . . Equal'
+    'ZeroArea ZeroArea . Equal';
+}
+
+.card_phone .btns_part .tool {
+    padding: 5px;
+    background-color: #084298;
+    color: var(--white-color);
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--white-color);
+    font-size: 25px;
+    user-select: none;
+}
+.card_phone .btns_part .tool:hover {
+    background-color: #092c5f;
+    color: var(--white-color);
+}
+
+.card_phone .btns_part .opera {
+    background-color: #0e8f62;
+}
+.card_phone .btns_part .opera:hover {
+    background-color: #095137;
+}
+
+.card_phone .btns_part .equal {
+    grid-area: Equal;
+}
+.card_phone .btns_part .zero {
+    grid-area: ZeroArea;
+}
+
+/* End Parent (card_phone) */
+

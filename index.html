@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google [Icons, Fonts] Library -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Bootstrap CSS Library -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Ionicon Library For Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <link rel="stylesheet" href="master.css">
+    <title>Calculator App</title>
+</head>
+<body>
+
+    <div id="app">
+        <div class="card_phone">
+            <div class="output_part">
+                <div class="top"></div>
+                <div class="down">0</div>
+            </div>
+            <div class="btns_part">
+                <div class="tool clear" data-tool="c">AC</div>
+                <div class="tool del" data-tool="d">DEL</div>
+                <div class="tool module opera" data-tool="%">%</div>
+                <div class="tool division opera" data-tool="/">/</div>
+                <div class="tool seven" data-tool="7">7</div>
+                <div class="tool eight" data-tool="8">8</div>
+                <div class="tool nine" data-tool="9">9</div>
+                <div class="tool multiplication opera" data-tool="*">*</div>
+                <div class="tool four" data-tool="4">4</div>
+                <div class="tool five" data-tool="5">5</div>
+                <div class="tool six" data-tool="6">6</div>
+                <div class="tool subtraction opera" data-tool="-">-</div>
+                <div class="tool one" data-tool="1">1</div>
+                <div class="tool two" data-tool="2">2</div>
+                <div class="tool three" data-tool="3">3</div>
+                <div class="tool zero" data-tool="0">0</div>
+                <div class="tool dot" data-tool=".">.</div>
+                <div class="tool equal opera" data-tool="=">=</div>
+            </div>
+        </div>
+
+        <p id="MoreInfoP" data-class="Self_modal_about">More About This App <span class="material-symbols-outlined">help</span></p>
+
+        <p class="text-center">Created By <a href="https://github.com/Abdelrhman8Qouay/">Abdelrhman Ashraf</a> With 💖</p>
+    </div>
+
+
+    <!-- Start Modal -->
+    <div class="Self_modal_about">
+        <div class="card">
+            <div class="card-header">
+                <h1 class="text-center m-2">About This Application</h1>
+            </div>
+            <div class="card-body">
+
+                <div class="row owner">
+                    <div class="info-content col-6">
+                        <h3>Created By Programmer</h3>
+                        <p>Name>> Abdelrhman Ashraf</p>
+                        <p>Email>> qouay555@gmail.com</p>
+                        <div class="social_content">
+                            <a target="_blank" href="https://github.com/Abdelrhman8Qouay/"><ion-icon name="logo-github"></ion-icon></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/abdelrhman-ashraf-taoc-015b86265/"><ion-icon name="logo-linkedin"></ion-icon></a>
+                            <a target="_blank" href="https://www.facebook.com/profile.php?id=100090009622327"><ion-icon name="logo-facebook"></ion-icon></a>
+                        </div>
+                    </div>
+                    <div class="img-content col-6">
+                        <img src="./assets/only.jpg" loading="lazy" alt="ownerImage">
+                    </div>
+                </div>
+
+                <h2 class="text-center m-2">Calculator Application Site</h2>
+
+                <div class="row">
+                    <p>Api From>>> </p>
+                    <p>Description>> First Time With This App To Make A
+                        Calculator App
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="master.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
