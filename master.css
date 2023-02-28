@@ -21,14 +21,9 @@
 
 
 #app {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  background: rgb(180, 100, 255);
+    width: 100%;
+    min-height: 100vh;
+    gap: 30px;
 }
 
 
@@ -48,7 +43,7 @@ p#MoreInfoP:hover {
 
 /* Start Modal More About */
 
-  .Self_modal_about {
+.Self_modal_about {
     position: absolute;
     background-color: #0000004e;
     left: 0;
@@ -59,34 +54,34 @@ p#MoreInfoP:hover {
     justify-content: center;
     align-items: center;
     z-index: 10000;
-  }
-  .Self_modal_about.show {
+}
+.Self_modal_about.show {
     display: flex;
-  }
-  .Self_modal_about.show .card {
+}
+.Self_modal_about.show .card {
     transform: translateY(0);
     visibility: visible;
-  }
+}
 
-  .Self_modal_about .card {
+.Self_modal_about .card {
     max-width: 400px;
     min-height: 350px;
     color: #454545;
     transition: 0.5s;
     transform: translateY(-30px);
     visibility: hidden;
-  }
+}
 
-  .Self_modal_about .card .card-body .owner .info-content {
+.Self_modal_about .card .card-body .owner .info-content {
     flex: 1 0 65%;
-  }
+}
 
-  .Self_modal_about .card .card-body .owner .info-content .social_content {
+.Self_modal_about .card .card-body .owner .info-content .social_content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-  .Self_modal_about .card .card-body .owner .info-content .social_content a {
+}
+.Self_modal_about .card .card-body .owner .info-content .social_content a {
     background-color: #454545;
     color: #fff;
     border-radius: 50%;
@@ -118,12 +113,11 @@ p#MoreInfoP:hover {
 /* ---------------------------------------- */
 /* Start Parent (card_phone) */
 .card_phone {
-    height: max-content;
-    padding: 10px;
-    max-width: 500px;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
     background-color: var(--black-color);
     color: var(--white-color);
-    border-radius: 8px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -132,33 +126,32 @@ p#MoreInfoP:hover {
 /* output part */
 .card_phone .output_part {
     padding: 5px;
-    background-color: rgb(5, 163, 5);
-    box-shadow: inset 0 0 9px var(--black-color);
+    background-color: #161515;
     border-radius: 8px;
     min-width: 120px;
     overflow-x: hidden;
     position: relative;
-    height: 60px;
+    height: 125px;
     display: flex;
     align-items: center;
 }
 
 .card_phone .output_part .top {
-    font-size: 20px;
+    font-size: 2rem;
     transition: var(--transition);
 }
 .card_phone .output_part .top.hide {
     position: relative;
-    top: -10px;
-    font-size: 14px;
-    color: var(--text);
+    top: -20%;
+    font-size: 18px;
+    color: #afafaf;
 }
 
 .card_phone .output_part .down {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    font-size: 20px;
+    font-size: 2rem;
     transition: var(--transition);
     visibility: hidden;
 }
@@ -169,38 +162,47 @@ p#MoreInfoP:hover {
 /* buttons part */
 .card_phone .btns_part {
     display: grid;
-    background-color: #2196F3;
+    justify-content: space-between;
     gap: 5px;
-    grid-template-columns: repeat(4, 80px);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas: '. . . .'
+    '. . . .'
     '. . . .'
     '. . . .'
     '. . . Equal'
     'ZeroArea ZeroArea . Equal';
+    height: 100%;
 }
 
 .card_phone .btns_part .tool {
     padding: 5px;
-    background-color: #084298;
+    background-color: #212529;
     color: var(--white-color);
     transition: 0.4s;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--white-color);
     font-size: 25px;
     user-select: none;
 }
 .card_phone .btns_part .tool:hover {
-    background-color: #092c5f;
+    background-color: #292e32;
     color: var(--white-color);
 }
 
 .card_phone .btns_part .opera {
-    background-color: #0e8f62;
+    background-color: #5c35dc;
 }
 .card_phone .btns_part .opera:hover {
-    background-color: #095137;
+    background-color: #4c2eaf;
+}
+
+.card_phone .btns_part .bana {
+    background-color: #41464b;
+}
+.card_phone .btns_part .bana:hover {
+    background-color: #4f555b;
 }
 
 .card_phone .btns_part .equal {
@@ -211,4 +213,3 @@ p#MoreInfoP:hover {
 }
 
 /* End Parent (card_phone) */
-
